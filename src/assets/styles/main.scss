@@ -1,0 +1,78 @@
+/* ------------------------- Fonts -------------------------------------------------- */
+
+@font-face {
+  font-family: "Heading";
+  src: url("../fonts//NeueMontreal-Regular.woff2") format("woff2"),
+    url("../fonts/NeueMontreal-Regular.woff") format("woff"),
+    url("../fonts/NeueMontreal-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------- Variables -------------------------------------------------- */
+
+::root {
+  /* ---- Color ---- */
+  --color-dark: #1c1d20;
+
+  /* ---- Text ---- */
+
+  /* ---- Spacing ---- */
+
+  /* ---- Animation Timing Transition ---- */
+  --animation-primary: 0.4s cubic-bezier(0.5, 0.75, 0, 1);
+}
+
+/* ------------------------- Normalization -------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Heading";
+  color: var(--color-dark);
+}
+
+/* ------------------------- Styles -------------------------------------------------- */
+
+h1 {
+  font-weight: 450;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h1 {
+    font-size: 3em;
+  }
+}
+
+.paragraph {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3.5rem;
+
+  .word {
+    position: relative;
+    margin-inline-end: 0.225em;
+
+    .shadow {
+      position: absolute;
+      opacity: 0.2;
+    }
+
+    .character {
+      position: relative;
+    }
+  }
+}
