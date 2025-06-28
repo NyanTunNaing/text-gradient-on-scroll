@@ -11,17 +11,15 @@
 
 /* ------------------------- Variables -------------------------------------------------- */
 
-::root {
-  /* ---- Color ---- */
-  --color-dark: #1c1d20;
+/* ---- Color ---- */
+$color-dark: #1c1d20;
 
-  /* ---- Text ---- */
+/* ---- Text ---- */
 
-  /* ---- Spacing ---- */
+/* ---- Spacing ---- */
 
-  /* ---- Animation Timing Transition ---- */
-  --animation-primary: 0.4s cubic-bezier(0.5, 0.75, 0, 1);
-}
+/* ---- Animation Timing Transition ---- */
+$animation-primary: 0.4s cubic-bezier(0.5, 0.75, 0, 1);
 
 /* ------------------------- Normalization -------------------------------------------------- */
 
@@ -36,7 +34,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "Heading";
-  color: var(--color-dark);
+  color: $color-dark;
 }
 
 /* ------------------------- Styles -------------------------------------------------- */
